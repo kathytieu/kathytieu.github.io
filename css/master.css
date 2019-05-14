@@ -26,20 +26,24 @@ a:hover{
 /* divs */
 
 
-div.spacer{
+div.spacersmall{
+	height:128px;
+}
+
+div.spacerlarge{
 	height:256px;
 }
 
 div.full{
 	width:100%;
 	margin:0px auto;
-	padding:0;
+	padding:16px;
 }
 
 div.large{
 	max-width:1200px;
 	margin:0px auto;
-	padding:16;
+	padding:16px;
 }
 
 div.small{
@@ -56,7 +60,7 @@ div.flex-container{
 }
 
 .flex-container > div {
-	margin:5px;
+	margin:16px;
 	flex-grow:1;
 	align-self:flex-start;
 }
@@ -106,3 +110,50 @@ div.go{
 	display:inline;
 	float:left;
 }
+
+
+/* nav alt */
+
+div.navalt{
+	width:90px;
+	position:fixed;
+	float: left;
+	top:0;
+	z-index:99;
+	margin:0;
+	background-color: #FFF;
+	border-right:2px solid #000;
+
+}
+
+.navalt ul{
+	margin:0px;
+	padding:20px;
+}
+
+.navalt li{
+	list-style-type:none;
+	transform: rotate(-90deg);
+	float:top;
+	display:inline-block;
+	padding: 0px 20px;
+}
+
+.navalt a{
+	color:#000;
+	text-decoration:none;
+	border-bottom:0px solid;
+}
+
+.navalt a:hover{
+	color:#fff;
+	background:#000;
+}
+
+.iamalt{
+	margin:0px;
+	transform: rotate(-90deg);
+	padding:16px;
+}
+
+
