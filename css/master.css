@@ -11,34 +11,41 @@
 
 body{
 	font-family: 'Nimbus-Reg', sans-serif;
-	font-weight:400;
-	font-size:24px;
+	font-weight: 400;
+	font-size: 24px;
 	letter-spacing: 0.01em;
 	color: #000;
 	line-height: 1.4em;
-	margin:0px;
+	margin: 0px;
 }
 
 a{
-	color:#000;
-	text-decoration:none;
-	border-bottom:2px solid #000;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #000;
 }
 
 a:visited,active{
-	color:#000;
-	text-decoration:none;
+	color: #000;
+	text-decoration: none;
 }
 
 a:hover{
-	color:#fff;
-	background:#000;
+	color: #fff;
+	background: #000;
 }
 
 h1{
-	font-size:80px;
-	line-height: 1em;
-	font-weight:700;
+	font-family: 'Nimbus-Bold', sans-serif;
+	font-size: 80px;
+	line-height: 1.1em;
+}
+
+strong{
+	font-family: 'Nimbus-Bold', sans-serif;
+	padding: 4px;
+	background-color: #000;
+	color: #FFF;
 }
 
 
@@ -46,93 +53,91 @@ h1{
 
 
 div.spacersmall{
-	height:128px;
+	height: 128px;
 }
 
 div.spacerlarge{
-	height:256px;
+	height: 256px;
 }
 
 div.full{
-	width:100%;
-	margin:0px auto;
-	padding:16px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 16px;
 }
 
 div.large{
-	max-width:1200px;
-	margin:0px auto;
-	padding:16px;
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 16px;
 }
 
 div.small{
-	max-width:650px;
-	margin:0px auto;
-	padding:16px;
+	max-width: 650px;
+	margin: 0px auto;
+	padding: 16px;
 }
 
 div.flex-container{
-	max-width:1200px;
-	margin:0px auto;
-	display:flex;
-	flex-wrap:nowrap;
+	max-width: 1200px;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .flex-container > div {
-	margin:16px;
-	flex-grow:1;
+	padding: 16px;
+	flex-grow: 1;
 	flex-basis: 0;
-	align-self:flex-start;
+	align-self: flex-start;
 }
 
+
+
+/* components */
 
 
 /* nav */
 
 
 div.go{
-	width:100%;
-	position:fixed;
-	top:0;
-	z-index:99;
-	margin:0;
-	background-color: #FFF;
-	border-bottom:2px solid #000;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	margin: 0;
 
 }
 
 .go ul{
-	margin:0px;
-	padding:20px;
+	margin: 0px;
+	padding: 20px;
 }
 
 .go li{
-	list-style-type:none;
-	float:right;
-	display:inline-block;
+	list-style-type: none;
+	float: right;
+	display: inline-block;
 	padding: 0px 20px;
 }
 
 .go a{
-	color:#000;
-	text-decoration:none;
-	border-bottom:0px solid;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 0px solid;
 }
 
 .go a:hover{
-	color:#fff;
-	background:#000;
+	color: #fff;
+	background: #000;
 }
 
 .iam{
-	margin:0px;
-	padding:16px;
-	display:inline;
-	float:left;
+	margin: 0px;
+	padding: 16px;
+	display: inline;
+	float: left;
 }
-
-
-/* components */
 
 
 /* divider */
