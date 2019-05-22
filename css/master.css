@@ -1,19 +1,18 @@
 @font-face {
-    font-family: 'Nimbus-Reg';
-    src: url('NimbusSanL-Reg.otf');
+    font-family: 'HelveticaNeue_Roman';
+    src: url('HelveticaNeue_Roman.otf');
 }
 
 @font-face {
-    font-family: 'Nimbus-Bold';
-    src: url('NimbusSanL-Bol.otf');
+    font-family: 'HelveticaNeue_Bold';
+    src: url('HelveticaNeue_Bold.otf');
 }
 
 
 body{
-	font-family: 'Nimbus-Reg', sans-serif;
+	font-family: 'HelveticaNeue_Roman', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
-	letter-spacing: 0.01em;
 	color: #000;
 	line-height: 1.4em;
 	margin: 0px;
@@ -22,7 +21,7 @@ body{
 a{
 	color: #000;
 	text-decoration: none;
-	border-bottom: 3px solid #000;
+	border-bottom: 1.5px solid #000;
 }
 
 a:visited,active{
@@ -36,17 +35,37 @@ a:hover{
 }
 
 h1{
-	font-family: 'Nimbus-Bold', sans-serif;
-	font-size: 80px;
+	font-family: 'HelveticaNeue_Bold', sans-serif;
+	font-size: 86px;
+	line-height: 1.1em;
+}
+
+h2{
+	font-family: 'HelveticaNeue_Roman', sans-serif;
+	font-size: 18px;
 	line-height: 1.1em;
 }
 
 strong{
-	font-family: 'Nimbus-Bold', sans-serif;
+	font-family: 'HelveticaNeue_Bold', sans-serif;
 }
 
 
 /* divs */
+
+
+div.body{
+	width: 100%;
+	margin: 0px auto;
+}
+
+div.sidebar{
+	display: inline-block;
+	float: left;
+	width: 5px;
+	background-color: pink;
+
+}
 
 
 div.spacersmall{
@@ -103,12 +122,14 @@ div.go{
 	top: 0;
 	z-index: 99;
 	margin: 0;
+	border-bottom: 1.5px solid #000;
+	background-color: #FFF;
 
 }
 
 .go ul{
 	margin: 0px;
-	padding: 20px;
+	padding: 10px;
 }
 
 .go li{
@@ -131,7 +152,7 @@ div.go{
 
 .iam{
 	margin: 0px;
-	padding: 16px;
+	padding: 10px;
 	display: inline;
 	float: left;
 }
@@ -140,7 +161,7 @@ div.go{
 /* divider */
 
 hr{
-	border-top: 3px solid #000;
+	border-top: 1.5px solid #000;
 }
 
 /* inline image */
@@ -148,46 +169,6 @@ hr{
 span.img{
 	margin: 0px;
 	padding: 0px 32px;
-	display: inline;
-	float: left;
-}
-
-/* rotated side? */
-
-aside {
-  	display: block;
-  	position: fixed;
-  	margin: 16px 0;
-	z-index: 99;
-}
-
-/* Class name via Modernizr */
-.csstransforms aside {
- 	border-left: 34px solid #369;
- 	padding-left: 10px;
-}
-.csstransforms aside p {
-  /* Abs positioning makes it not take up vert space */
- 	position: absolute;
- 	top: 0;
- 	left: 0;
-
-  /* Border is the new background */
-  background: none;
-
-  /* Rotate from top left corner (not default) */
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-}
-
-
-p.sidetop {
-  	transform: rotate(-90deg);
-  	position: fixed;
-	top: 5%;
-	z-index: 99;
-  	margin: 0px;
-	padding: 0px;
 	display: inline;
 	float: left;
 }
