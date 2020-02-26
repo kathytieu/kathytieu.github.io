@@ -1,0 +1,173 @@
+
+/* type */
+
+@font-face {
+    font-family: HelveticaNeue_Roman;
+    src: url(assets/fonts/HelveticaNeue_Roman.otf);
+ }
+
+ @font-face {
+    font-family: HelveticaNeue_Bold;
+    src: url(assets/fonts/HelveticaNeue_Bold.otf);
+ }
+
+body{
+	font-family: 'HelveticaNeue_Roman', sans-serif;
+	font-size:18px;
+	color: #000;
+	line-height: 28px;
+	letter-spacing: 1px;
+	margin:0px 32px auto;
+}
+
+strong{
+	font-family: HelveticaNeue_Bold;
+}
+
+h1{
+	font-family: HelveticaNeue_Bold;
+	font-size:100px;
+	line-height: 130px;
+}
+
+h2{
+	font-family: HelveticaNeue_Bold;
+	font-size:36px;
+	line-height: 48px;
+}
+
+h3{
+	font-family: HelveticaNeue_Bold;
+	font-size:18px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	text-transform:uppercase;
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+	border-bottom:2px solid #000;
+}
+
+a:visited,active{
+	color:#000;
+	text-decoration:none;
+}
+
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 30px;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;
+}
+
+
+/* back to projects */
+
+div.back{
+	position:fixed;
+	top:16px;
+	left:32px;
+	float:left;
+	z-index:99;
+	margin:0;
+}
+
+
+/* white space for breathing */
+
+
+div.spacersmall{
+	height:64px;
+}
+
+div.spacerlarge{
+	height:128px;
+}
+
+div.spacerxlarge{
+	height:256px;
+}
+
+
+/* boxes for content */
+
+
+
+div.full{
+	width:100%;
+	margin:0px auto;
+}
+
+div.hug{
+	max-width:1200px;
+	margin:0px auto;
+	padding:0px;
+}
+
+div.squeeze{
+	max-width:580px;
+	margin:0px auto;
+	padding:0px;
+}
+
+div.flex{
+	max-width:1200px;
+	margin:0px auto;
+	display:flex;
+	flex-wrap:row wrap;
+}
+
+div.flex-same {
+	margin:0px 32px 0px 0px;
+	flex: 1 1 0;
+	align-self:flex-start;
+}
+
+div.flex-small {
+	margin:0px 32px 0px 0px;
+	flex: 1;
+	align-self:flex-start;
+}
+
+div.flex-large {
+	margin:0px 32px 0px 0px;
+	flex: 2;
+	align-self:flex-start;
+}
+
+
+
+.image-container {
+	display: flex;
+ 	justify-content: center;
+}
+
+
+/* tiny text */
+
+
+span {
+  display: inline-block;
+  vertical-align: text-top;
+  line-height: normal;
+}
+
+.tinytext{
+	font-size:11px;
+}
+
+
+/* no image hover */
+
+a img {
+	color:transparent;
+	text-decoration:none;
+	border-bottom:none;
+	}
+
