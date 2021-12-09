@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p>hey kathy, weather is 
+            <span class="hidden-mood" id="mood-happy">happy</span>
+            <span class="hidden-mood" id="mood-comfy">comfy</span>
+            <span class="hidden-mood" id="mood-miserable">miserable</span>
+            <span id="mood-loading">mysterious</span>
+        </p>
+    </body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+    fetch('https://us-west2-gothic-sylph-334603.cloudfunctions.net/weatherthing-1')
+        .then(res => res.json())
+        .then(data => {
+            const mood = data['mood'];
+            document.getElementById(`mood-${mood}`).classList.remove('hidden-mood');
+            document.getElementById('mood-loading').classList.add('hidden-mood');
+        });
+});
+</script>
+
+<style>
+.hidden-mood {
+    display: none;
+}
+</style>
