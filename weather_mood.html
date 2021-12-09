@@ -11,7 +11,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function(event) {
-    fetch('https://us-west2-gothic-sylph-334603.cloudfunctions.net/weatherthing-1')
+    fetch('https://us-west2-gothic-sylph-334603.cloudfunctions.net/weatherthing')
         .then(res => res.json())
         .then(data => {
             const mood = data['mood'];
