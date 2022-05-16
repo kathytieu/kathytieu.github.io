@@ -1,0 +1,96 @@
+/* foundation */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #F8F8F8;
+    --secondary: #6C6C76;
+    --tertiary: #222227;
+    --quaternary: #17171B;
+    --cta: #48FFF4;
+    
+}
+
+body{
+    background-color: var(--quaternary);
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+
+/* grid */
+
+.grid-container{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1800px;
+    margin: 0 auto;
+    padding:32px;
+}
+
+.grid-container > div{
+    padding: 0;
+}
+
+.grid-col-span-1{
+    grid-column: span 1;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.grid-col-span-3{
+    grid-column: span 3;
+}
+
+.grid-col-span-4{
+    grid-column: span 4;
+}
+
+.grid-col-span-5{
+    grid-column: span 5;
+}
+
+.grid-col-span-6{
+    grid-column: span 6;
+}
+
+.grid-col-span-7{
+    grid-column: span 7;
+}
+
+.grid-col-span-8{
+    grid-column: span 8;
+}
+
+.grid-col-span-9{
+    grid-column: span 9;
+}
+
+.grid-col-span-10{
+    grid-column: span 10;
+}
+
+.grid-col-span-11{
+    grid-column: span 11;
+}
+
+.grid-col-span-12{
+    grid-column: span 12;
+}
+
+@media (max-width: 800px) {
+    .grid-col-span-1, .grid-col-span-2, .grid-col-span-3,
+    .grid-col-span-4, .grid-col-span-5, .grid-col-span-6,
+    .grid-col-span-7, .grid-col-span-8, .grid-col-span-9,
+    .grid-col-span-10, .grid-col-span-11, .grid-col-span-12 {
+      grid-column: span 12;
+    }
+}
