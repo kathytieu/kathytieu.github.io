@@ -314,10 +314,10 @@ div.bottom-container{
 
 
 input{
-    padding: 16px 0px;
+    padding: 0 0 16px 0;
     border: 0;
     outline: 0;
-    border-bottom: 1px solid var(--notEntered);
+    border-bottom: 1px solid var(--secondary);
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
