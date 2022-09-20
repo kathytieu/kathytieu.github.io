@@ -16,6 +16,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     background-color: var(--quaternary);
     margin: 0px auto;
@@ -181,6 +185,35 @@ div.spacer-xl{
 
 /* content blocks */
 
+
+.topnav-logo{
+    position: sticky;
+    top: 30wh;
+}
+
+
+.topnav-beta{
+    padding: 8px 16px;
+    background-color: var(--cta);
+    position: fixed;
+    top: 32px;
+    right: 64px;
+    z-index: 9999;
+ }    
+
+ .topnav-beta a{
+    font-family: 'Azeret Mono', monospace;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    text-decoration: none;
+    color: var(--quaternary);
+ }
+
+
+
 div.contentblock{
     display: flex;
     justify-content: center;
@@ -196,7 +229,7 @@ div.intro{
     align-items: stretch;
     justify-content: center;
     width:1500px;
-    height: 85vh;
+    height: 80vh;
     margin:0px;
     padding: 0px 64px;
     gap:64px;
@@ -254,9 +287,11 @@ div.bottom-container{
 }
 
 
-.sticky{
-    position: sticky;
-    top: 32px;
+.herovideo{
+    min-width: 100%;
+    max-width: 50vw;
+    margin: 0 64px 0 0;
+    padding: 0;
 }
 
 
