@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #D9D9D9;
+    --secondary: #808080;
+    --tertiary: #333333;
+    --bg-high: #1F1F1F;
+    --bg-medium: #141414;
+    --bg-low: #0F0F0F;
+    --link: #06A8F9;
+    --linkhover: #6ACBFB;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: .45px;
+}
+
+@font-face{
+    font-family: Inter;
+    src: url("Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@font-face{
+    font-family: Sometype;
+    src: url("SometypeMono-VariableFont_wght.ttf");
+}
+
+
+html{
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+body{
+    background-color: var(--bg-low);
+    margin: 0px auto;
+    padding: 0px;
+    color: var(--primary);
+}
+
+
+/* space */
+
+div.spacer-16{
+    height:16px;
+}
+ 
+div.spacer-32{
+    height:32px;
+}
+
+div.spacer-64{
+    height:64px;
+}
+
+div.spacer-128{
+    height:128px;
+}
+  
+div.spacer-256{
+    height:256px;
+}
+
+/* text formatting */
+
+p, h1, h2, h3, h4{
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1{
+    font-size: 100px;
+    line-height: 1.3em;
+    font-weight: 650;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: -.2px;
+    margin: 0;
+}
+
+h3{
+    font-size: 21px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-size: 12px;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin: 0;
+    padding:0;
+    color: var(--secondary);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+
+/* dynamic big text maybe? */
+
+.text-hero{
+    font-size: clamp(36px, calc(36px + (300 - 30) * (100vw - 768px)/(1920 - 768)), 200px);
+    line-height: 1em;
+    font-weight:600;
+}
+
+/*links*/
+
+a{
+	color: var(--primary);
+	text-decoration:none;
+	border-bottom:2px solid var(--primary);
+}
+
+a:visited,active{
+	color: var(--primary);
+	text-decoration:none;
+	border-bottom:2px solid var(--primary);
+}
+
+
+a:hover {
+  color: var(--primary);
+  border-bottom: 0;
+  text-decoration: none;
+  cursor:default;
+}
+
+
+
+ /* button */
+
+ button{
+    font-family: 'Sometype';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    margin: 0;
+    border-radius: 8px;
+    min-width: 130px;
+    float: right;
+    cursor: default;
+  }
+  
+  button.primary {
+    background-color: var(--primary);
+    color: var(--bg-low);
+    border: none;
+  }
+  
+  button.primary:hover {
+    background-color: #fff;
+    color: var(--bg-low);
+  }
+
+  button.secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  button.secondary:hover {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.button-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+
+
+/* main content container */
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+
+/* sections */
+
+.container-column-2{
+    display: grid;
+    flex-direction: row;
+    gap: 64px;
+    grid-template-columns: 1fr 1.8fr;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+.container-column-2 > div{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+}
+
+.hero-badge-container {
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
+    padding: 32px 0 0 0;
+    margin: 0;
+}
+
+.hero-badge {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 32px;
+    margin: 0;
+    background-color: var(--bg-medium);
+    border-radius: 8px;
+}
+
+
+
+/* demo video */
+
+.demo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 256px 32px;
+    margin: 0 auto;
+    --dot-bg: black;
+    --dot-color: var(--tertiary);
+    --dot-size: 1px;
+    --dot-space: 32px;
+      background:
+          linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+          var(--dot-color);
+}
+
+
+
+/* responsive */
+
+@media (max-width: 800px) {
+    .container-column-2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* this isn't working lol */
+    .h1 {
+        font-size: 1vw;
+    }
+}
