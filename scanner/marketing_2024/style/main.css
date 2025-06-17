@@ -15,9 +15,9 @@
     --linkhover: #6ACBFB;
     font-family: 'Inter';
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6em;
-    letter-spacing: .45px;
+    font-weight: 300;
+    line-height: 160%;
+    letter-spacing: .3px;
 }
 
 @font-face{
@@ -54,6 +54,10 @@ div.spacer-32{
     height:32px;
 }
 
+div.spacer-42{
+    height:42px;
+}
+
 div.spacer-64{
     height:64px;
 }
@@ -73,38 +77,62 @@ p, h1, h2, h3, h4{
     padding: 0;
 }
 
-h1{
-    font-size: 100px;
-    line-height: 1.3em;
-    font-weight: 650;
-    letter-spacing: 0px;
+.hero{
+    font-size: 74px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: -1.48px;
     margin: 0;
     padding: 0;
 }
 
-h2{
-    font-size: 42px;
-    line-height: 1.2em;
-    font-weight: 600;
-    letter-spacing: -.2px;
-    margin: 0;
-}
-
-h3{
-    font-size: 21px;
-    line-height: 1.6em;
-    font-weight: 400;
+.heroSub{
+    font-size: 24px;
+    line-height: 160%;
+    font-weight: 300;
+    letter-spacing: -0.14px;
     margin: 0;
     padding: 0;
 }
 
-h4{
-    font-size: 12px;
-    line-height: 1.6em;
+.section{
+    font-size: 40px;
+    line-height: 140%;
     font-weight: 400;
+    letter-spacing: -.8px;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: -0.22px;
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle{
+    font-family: 'Sometype';
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
     margin: 0;
     padding:0;
-    color: var(--secondary);
+}
+
+.metadata{
+    font-family: 'Sometype';
+    font-size: 13px;
+    line-height: 140%;
+    font-weight: 400;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin: 0;
+    padding:0;
 }
 
 .text-center{
@@ -152,14 +180,14 @@ a:hover {
 
  button{
     font-family: 'Sometype';
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.6em;
-    letter-spacing: .3px;
+    letter-spacing: .48px;
     text-transform: uppercase;
     padding: 8px 32px;
     margin: 0;
-    border-radius: 8px;
+    border-radius: 9999px;
     min-width: 130px;
     float: right;
     cursor: default;
@@ -179,7 +207,7 @@ a:hover {
   button.secondary {
     background-color: transparent;
     color: var(--primary);
-    border: 1px solid var(--primary);
+    border: 1px solid var(--tertiary);
   }
   
   button.secondary:hover {
@@ -223,7 +251,7 @@ a:hover {
     display: grid;
     flex-direction: row;
     gap: 64px;
-    grid-template-columns: 1fr 1.8fr;
+    grid-template-columns: 1fr 2fr;
     width: 100%;
     margin: 0;
     padding:0;
@@ -249,6 +277,7 @@ a:hover {
     gap: 16px;
     padding: 32px 0 0 0;
     margin: 0;
+    border-color: var(--tertiary);
 }
 
 .hero-badge {
