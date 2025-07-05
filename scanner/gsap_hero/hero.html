@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Landing Animation</title>
+    <link rel="stylesheet" href="hero_styles/styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="options">
+            <div class="options-time">
+                <img src="hero_styles/time.svg" width="32" height="32">
+                <p class="text-medium">Last 2 years</p>
+            </div>
+            <button class="options-playground" type="button"><p class="text-medium">Try the Playground</p></button>
+        </div>
+
+
+        <div class="querybox">
+
+            <div>
+                <p class="text-medium secondary">1</p>
+                <p class="text-large">query <span class="syntax-boolean">ALL</span> historical logs</p>
+            </div>
+
+            <div>
+                <p class="text-medium secondary">2</p>
+                <p class="text-large">get results in <span class="syntax-datetime">seconds</span></p>
+            </div>
+
+            <div>
+                <p class="text-medium secondary">3</p>
+                <p class="text-large">at a <span class="syntax-number">tenth</span> of the cost</p>
+            </div>
+
+
+        </div>
+
+        <div class="results">
+            <p class="text-medium">4,686,648,998 Events</p>
+            <div class="results-row">
+                <div class="results-row-item">
+                    <p class="text-small secondary">Status</p>
+                    <p class="text-small">Done</p>
+                </div>
+                <div class="results-row-item">
+                    <p class="text-small secondary">Elapsed</p>
+                    <p class="text-small">64.538s</p>
+                </div>
+                <div class="results-row-item">
+                    <p class="text-small secondary">Bytes Scanned</p>
+                    <p class="text-small">13.1 TB (208 GB/s)</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="hero_styles/script.js"></script>
+</body>
+</html>
